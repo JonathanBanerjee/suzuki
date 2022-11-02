@@ -1,0 +1,11 @@
+#POC - Set a timer to run the helloworld.py every minute. 
+
+[Unit]
+Description=Run helloworld every hour
+
+#Set the timer to run every hour.
+[Timer]
+OnCalendar=*-*-* *:00:*
+
+[Install]
+WantedBy=timers.target

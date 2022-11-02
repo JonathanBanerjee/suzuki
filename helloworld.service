@@ -1,0 +1,13 @@
+#POC - Service that runs hello world when the linux VM starts.
+
+[Unit]
+Description=A systemd service that runs hello world on boot.
+
+#ExecStart is the file pat.
+#Restart automatically restarts the file if it breaks (which has been done deliberately on helloworld.py)
+[Service]
+ExecStart=/home/jonathan/Desktop/jump/suzuki/helloworld.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
