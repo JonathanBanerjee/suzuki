@@ -1,4 +1,4 @@
-#POC - Set a timer to run the helloworld.py every minute. 
+# Set a timer to run the helloworld.py every hour. 
 
 [Unit]
 Description=Run helloworld every hour
